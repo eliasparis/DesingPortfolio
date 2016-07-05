@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="home" style="display: none;">
+
+  <h1 class="page-heading">Postssssss</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
+
+<section class="half-index pic">
+
+  <div class="profile-pic" style="background-image: url({{ site.baseurl }}/assets/pic.jpg);"></div>
+
+</section><section class="half-index">
+
+  <div class=".right-index">
+    <h1>iNES CARBALLiDO</h1>
+    <h3>DISEÑO GRÁFICO / ILUSTRACIÓN / DIRECCIÓN DE ARTE</h3>
+  </div>
+
+  <div class=".right-index">
+    <p></p>
+    <button>portfolio</button>
+  </div>
+
+</section>
